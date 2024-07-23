@@ -117,185 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="labelUserName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="labelUserName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 28.2pt</value>
-  </data>
   <data name="labelUserName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>129, 51</value>
+    <value>42, 51</value>
   </data>
   <data name="labelUserName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 67</value>
-  </data>
-  <data name="labelUserName.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>320, 67</value>
   </data>
   <data name="labelUserName.Text" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="&gt;&gt;labelUserName.Name" xml:space="preserve">
-    <value>labelUserName</value>
-  </data>
-  <data name="&gt;&gt;labelUserName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelUserName.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;labelUserName.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 121</value>
-  </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 76</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
-    <value>pictureBox1</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="OpenNewForm.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="OpenNewForm.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 19.800001pt</value>
+    <value>Авторизация</value>
   </data>
   <data name="OpenNewForm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 280</value>
+    <value>264, 280</value>
   </data>
   <data name="OpenNewForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 47</value>
-  </data>
-  <data name="OpenNewForm.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>110, 47</value>
   </data>
   <data name="OpenNewForm.Text" xml:space="preserve">
-    <value>About us</value>
-  </data>
-  <data name="&gt;&gt;OpenNewForm.Name" xml:space="preserve">
-    <value>OpenNewForm</value>
-  </data>
-  <data name="&gt;&gt;OpenNewForm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;OpenNewForm.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;OpenNewForm.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Settings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 272</value>
-  </data>
-  <data name="Settings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 52</value>
-  </data>
-  <data name="Settings.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="Settings.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Settings.Name" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="&gt;&gt;Settings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Settings.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Settings.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="LanguageSettings.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="toolStripTextBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 12pt</value>
-  </data>
-  <data name="toolStripTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 28</value>
+    <value>О нас</value>
   </data>
   <data name="toolStripTextBox1.Text" xml:space="preserve">
-    <value>Choose language</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 6</value>
-  </data>
-  <data name="UkrSet.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 12pt</value>
-  </data>
-  <data name="UkrSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 32</value>
+    <value>Выберите язык</value>
   </data>
   <data name="UkrSet.Text" xml:space="preserve">
-    <value>Ukr</value>
-  </data>
-  <data name="EngSet.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 12pt</value>
-  </data>
-  <data name="EngSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 32</value>
+    <value>Укр</value>
   </data>
   <data name="EngSet.Text" xml:space="preserve">
-    <value>Eng</value>
-  </data>
-  <data name="RusSet.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 12pt</value>
-  </data>
-  <data name="RusSet.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 32</value>
+    <value>Анг</value>
   </data>
   <data name="RusSet.Text" xml:space="preserve">
-    <value>Rus</value>
-  </data>
-  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 6</value>
-  </data>
-  <data name="CloseMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 12pt</value>
-  </data>
-  <data name="CloseMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>185, 32</value>
+    <value>Рус</value>
   </data>
   <data name="CloseMenu.Text" xml:space="preserve">
-    <value>✖Close</value>
-  </data>
-  <data name="LanguageSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>186, 202</value>
-  </data>
-  <data name="&gt;&gt;LanguageSettings.Name" xml:space="preserve">
-    <value>LanguageSettings</value>
-  </data>
-  <data name="&gt;&gt;LanguageSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>386, 336</value>
+    <value>✖Закрыть</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3229,56 +3083,5 @@
         TvJ9aKLvAnYEx/bgeCp4fg+qpc+PNbBs4j6W5M9glr+HNct/EPcldYzC/wdzNh7yE+zyAQAAAABJRU5E
         rkJggg==
 </value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>SpotifyStat</value>
-  </data>
-  <data name="&gt;&gt;toolStripTextBox1.Name" xml:space="preserve">
-    <value>toolStripTextBox1</value>
-  </data>
-  <data name="&gt;&gt;toolStripTextBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UkrSet.Name" xml:space="preserve">
-    <value>UkrSet</value>
-  </data>
-  <data name="&gt;&gt;UkrSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;EngSet.Name" xml:space="preserve">
-    <value>EngSet</value>
-  </data>
-  <data name="&gt;&gt;EngSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RusSet.Name" xml:space="preserve">
-    <value>RusSet</value>
-  </data>
-  <data name="&gt;&gt;RusSet.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
-    <value>toolStripSeparator2</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CloseMenu.Name" xml:space="preserve">
-    <value>CloseMenu</value>
-  </data>
-  <data name="&gt;&gt;CloseMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

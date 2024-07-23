@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,26 +117,76 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Перемотка вперед " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Перемотка вперед .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Album" xml:space="preserve">
+    <value>Альбом</value>
   </data>
-  <data name="Кнопка пауза " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Кнопка пауза .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AlbumCapacity" xml:space="preserve">
+    <value>Количество треков</value>
   </data>
-  <data name="Перемотка назад" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Перемотка назад.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AlbumCapacityLength" xml:space="preserve">
+    <value>130</value>
   </data>
-  <data name=")" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AlbumLength" xml:space="preserve">
+    <value>210</value>
   </data>
-  <data name="ae844e959e313cd5fc36f2ba77268661-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ae844e959e313cd5fc36f2ba77268661-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AlbumName" xml:space="preserve">
+    <value>Название альбома</value>
   </data>
-  <data name="Кнопка играть" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Кнопка играть.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Artist" xml:space="preserve">
+    <value>Исполнитель</value>
   </data>
-  <data name="Кнопка включения " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Кнопка включения .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ArtistLength" xml:space="preserve">
+    <value>130</value>
+  </data>
+  <data name="ArtistName" xml:space="preserve">
+    <value>Имя исполнителя</value>
+  </data>
+  <data name="ArtistNameLength" xml:space="preserve">
+    <value>180</value>
+  </data>
+  <data name="ComboboxText" xml:space="preserve">
+    <value>Выберите период</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Продолжительность</value>
+  </data>
+  <data name="DurationLength" xml:space="preserve">
+    <value>140</value>
+  </data>
+  <data name="Followers" xml:space="preserve">
+    <value>Подписчики</value>
+  </data>
+  <data name="FollowersLength" xml:space="preserve">
+    <value>130</value>
+  </data>
+  <data name="Genre" xml:space="preserve">
+    <value>Жанр</value>
+  </data>
+  <data name="GenreLegnth" xml:space="preserve">
+    <value>160</value>
+  </data>
+  <data name="ListeningTime" xml:space="preserve">
+    <value>Время прослушивания</value>
+  </data>
+  <data name="ListeningTimeText" xml:space="preserve">
+    <value>Играет в течение:</value>
+  </data>
+  <data name="OverallTime" xml:space="preserve">
+    <value>Общее время</value>
+  </data>
+  <data name="Popularity" xml:space="preserve">
+    <value>Коэффициент популярности</value>
+  </data>
+  <data name="PopularityLength" xml:space="preserve">
+    <value>180</value>
+  </data>
+  <data name="TopTrackNameLength" xml:space="preserve">
+    <value>160</value>
+  </data>
+  <data name="TrackName" xml:space="preserve">
+    <value>Название трека</value>
   </data>
 </root>

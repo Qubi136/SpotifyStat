@@ -1,136 +1,122 @@
+using Microsoft.VisualBasic.ApplicationServices;
 using SpotifyAPI.Web;
-using SpotifyAPI.Web.Auth;
-using SpotifyAPI.Web.Http;
 using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Reflection.Emit;
-using System.Security.Policy;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace SpotifyStat
 {
     public partial class Form1 : Form
     {
-        private EmbedIOAuthServer _server;
-        private SpotifyClient spotify;
-
-        
+        private SpotifyService _spotifyService;
 
         public Form1()
         {
             InitializeComponent();
+            AllInCenter();
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+
+            _spotifyService = new SpotifyService();
         }
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-            if (labelUserName.Text == "Login")
-            {
-                AllInCenter();
-            }
-            else
-            {
-                labelUserName.Location = new Point(0, 0);
-                pictureBox1.Location = new Point(labelUserName.Width, 0);
-            }
-        }
-        private void MakePictureBoxRound(PictureBox pictureBox)
-        {
-            GraphicsPath path = new GraphicsPath();
-            path.AddEllipse(0, 0, pictureBox.Width, pictureBox.Height);
-            pictureBox.Region = new Region(path);
-        }
+
+
         private async void Form1_Load(object sender, EventArgs e)
         {
-            AllInCenter();
-            await InitializeSpotify();
-            MakePictureBoxRound(pictureBox1);
+            //await _spotifyService.InitializeSpotify();
         }
 
-        private async Task InitializeSpotify()
+        private async void pictureBox1_Click(object sender, EventArgs e)
         {
-            var config = SpotifyClientConfig.CreateDefault();
-            var request = new ClientCredentialsRequest("clientId", "clientSecret");
-            var response = await new OAuthClient(config).RequestToken(request);
-
-            spotify = new SpotifyClient(config.WithToken(response.AccessToken));
-        }
-
-        private async Task LoadUserProfile()
-        {
-            var me = await spotify.UserProfile.Current();
-            string profileImageUrl = null;
-
-            if (me.Images.Count > 0)
+            if (LanguageSettings.IsDropDown)
             {
-                profileImageUrl = me.Images[0].Url;
+                LanguageSettings.Close();
             }
-            var UserName = me.DisplayName;
-            Invoke(new Action(() =>
+            await HandlePictureBoxClickAsync();
+        }
+
+        private async Task HandlePictureBoxClickAsync()
+        {
+            await _spotifyService.Authorize();
+            Form3 newForm = new Form3(_spotifyService);
+
+            newForm.Shown += (sender, args) =>
             {
-                labelUserName.Text = UserName;
-                if (!string.IsNullOrEmpty(profileImageUrl))
-                {
-                    pictureBox1.Load(profileImageUrl);
-                }
-                else
-                {
-                    pictureBox1.Load("https://cdn-icons-png.freepik.com/512/634/634795.png");
-                    MessageBox.Show("User does not have a profile picture.");
-                }
-                labelUserName.Location = new Point(0, 0);
-                pictureBox1.Location = new Point(labelUserName.Width, 0);
-            }));
+                this.Invoke((Action)(() => this.Hide()));
+            };
         }
-
-        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        private void OpenNewForm_Click(object sender, EventArgs e)
         {
-            pictureBox1.Cursor = Cursors.Hand;
+            Form2 newForm = new Form2();
+            newForm.Show();
         }
 
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        private void OpenNewForm_Click_1(object sender, EventArgs e)
         {
-            pictureBox1.Cursor = Cursors.Default;
+            Form2 form2 = new Form2();
+            form2.Show();
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void OpenNewForm_MouseEnter(object sender, EventArgs e)
         {
-            Task.Run(async () =>
-            {
-                _server = new EmbedIOAuthServer(new Uri(redirectUri), 5543);
-                await _server.Start();
-
-                _server.AuthorizationCodeReceived += OnAuthorizationCodeReceived;
-                _server.ErrorReceived += OnErrorReceived;
-
-                var request = new LoginRequest(_server.BaseUri, clientId, LoginRequest.ResponseType.Code)
-                {
-                    Scope = new List<string> { Scopes.UserReadEmail }
-                };
-
-                BrowserUtil.Open(request.ToUri());
-            });
+            OpenNewForm.Cursor = Cursors.Hand;
         }
 
-        private async Task OnAuthorizationCodeReceived(object sender, AuthorizationCodeResponse response)
+        private void OpenNewForm_MouseLeave(object sender, EventArgs e)
         {
-            await _server.Stop();
-            var config = SpotifyClientConfig.CreateDefault();
-            var tokenResponse = await new OAuthClient(config).RequestToken(
-                new AuthorizationCodeTokenRequest(clientId, clientSecret, response.Code, new Uri(redirectUri))
-            );
-
-            spotify = new SpotifyClient(tokenResponse.AccessToken);
-            await LoadUserProfile();
+            OpenNewForm.Cursor = Cursors.Default;
         }
-        private async Task OnErrorReceived(object sender, string error, string state)
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-            Console.WriteLine($"Aborting authorization, error received: {error}");
-            await _server.Stop();
+            ContextMenuShow();
         }
 
-        
+        private void UkrSet_Click(object sender, EventArgs e)
+        {
+            SetDefaultLanguage("uk-UA");
+        }
+
+        private void EngSet_Click(object sender, EventArgs e)
+        {
+            SetDefaultLanguage("en-EN");
+        }
+
+        private void RusSet_Click(object sender, EventArgs e)
+        {
+            SetDefaultLanguage("ru-RU");
+        }
+
+        private void CloseMenu_Click(object sender, EventArgs e)
+        {
+            LanguageSettings.Close();
+        }
+
+        private void ContextMenuShow()
+        {
+            Point pictureBoxLocation = Settings.PointToScreen(Point.Empty);
+
+            Point menuLocation = new Point(pictureBoxLocation.X, pictureBoxLocation.Y + Settings.Height);
+
+            LanguageSettings.Show(menuLocation);
+        }
+
+        private void SetDefaultLanguage(string language)
+        {
+            Properties.Settings.Default.Language = $"{language}";
+            Properties.Settings.Default.Save();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo($"{language}");
+            Controls.Clear();
+            LanguageSettings.Close();
+            InitializeComponent();
+            ContextMenuShow();
+            AllInCenter();
+        }
     }
 }
